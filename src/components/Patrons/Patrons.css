@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+
+.patrons-section {
+  background-color: #f4f7f6;
+  padding: 1px 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-heading {
+  font-size: 28px;
+  font-weight: 800;
+  color: #0a2d56;
+  text-align: left;
+}
+
+.heading-line {
+  height: 4px;
+  background: #f39c12;
+  margin: 12px 0 50px;
+  border-radius: 4px;
+}
+
+/* GRID */
+.patrons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  text-align: center;
+}
+
+/* CARD */
+.patron-card {
+  background: #ffffff;
+  padding: 30px 20px;
+  border-radius: 18px;
+  box-shadow: 0 4px 25px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.patron-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 30px rgba(0,0,0,0.08);
+}
+
+/* IMAGE */
+.patron-card img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 6px solid #e8f1f1;
+}
+
+/* NAME */
+.patron-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0a2d56;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.patron-card p {
+  font-size: 13px;
+  color: #0d0d0d;
+  line-height: 1.6;
+}
+
+/* FADE ANIMATION */
+.fade-in {
+  animation: fadeUp 1s ease-in-out;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .patrons-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .patrons-grid {
+    grid-template-columns: 1fr;
+  }
+}

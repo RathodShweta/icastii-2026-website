@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.web-container {
+  width: 100%;
+  /* NOT 1300px */
+  height: 100vh;
+  background-color: #f1f4f5;
+  display: flex;
+  justify-content: center;
+  /* Centers horizontally */
+  align-items: center;
+  /* Centers vertically */
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background UI Shapes */
+.accent-shape-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 300px;
+  background-color: #d7eaea;
+  border-bottom-left-radius: 100px;
+  z-index: 1;
+}
+
+.accent-shape-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 150px;
+  height: 200px;
+  background-color: #f8e9d8;
+  border-top-right-radius: 80px;
+  z-index: 1;
+}
+
+/* Main Card Styling */
+.main-poster-card {
+  background: #ffffff;
+  width: 400%;
+  max-width: 1100px;
+  /* Wide format matching the browser view */
+  border-radius: 35px;
+  padding: 1px 1px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  /* gap: 10px; */
+}
+
+/* Header Branding */
+.brand-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 0 40px;
+}
+
+.brand-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #111;
+}
+
+.brand-sub {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.brand-sub span {
+  color: #666;
+}
+
+.side-logo-placeholder {
+  width: 80px;
+  height: 80px;
+  background: #f0f4f7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+/* Teal Badge */
+.conference-badge {
+  background-color: #008484;
+  color: white;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+/* Hero Title */
+.hero-heading {
+  color: #0d2d5e;
+  font-size: 44px;
+  /* Large, bold typography */
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 35px;
+}
+
+/* Organization Block */
+.label-orange {
+  color: #f39c12;
+  font-weight: 800;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.college-title {
+  color: #0d2d5e;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.college-meta {
+  color: #777;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+/* Collaboration Block */
+.collaboration-block {
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+
+.collab-label {
+  font-weight: 700;
+  color: #0d2d5e;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.collab-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+/* Information Pill Bar */
+.event-info-bar {
+  background: linear-gradient(90deg, #dcf0f0 0%, #f6ecdb 100%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 18px 0;
+  border-radius: 15px;
+  width: 90%;
+  margin: 0 auto 35px;
+  margin: 3px auto 12px auto;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  color: #0d2d5e;
+  font-size: 15px;
+}
+
+.icon-teal {
+  color: #008484;
+}
+
+/* Theme Footer */
+.theme-text {
+  color: #008484;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.theme-text span {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-color: #f39c12;
+  /* Matches the orange underline highlight */
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 992px) {
+  .hero-heading {
+    font-size: 32px;
+  }
+
+  .brand-title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .web-container {
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .main-poster-card {
+    width: 95%;
+    border-radius: 20px;
+    padding: 20px 10px;
+  }
+
+  .brand-header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 20px;
+  }
+
+  .hero-heading {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  .event-info-bar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .info-item {
+    font-size: 14px;
+  }
+
+  .college-title {
+    font-size: 18px;
+  }
+
+  .theme-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-heading {
+    font-size: 20px;
+  }
+
+  .conference-badge {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.speakers-section {
+  background-color: #f4f7f6;
+  padding: 5px 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-heading {
+  font-size: 28px;
+  font-weight: 800;
+  color: #0a2d56;
+}
+
+.heading-line {
+  height: 4px;
+  width: 100%;
+  background: #f39c12;
+  margin: 12px 0 50px;
+  border-radius: 4px;
+}
+/* GRID */
+.speakers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+}
+
+/* CARD */
+.speaker-card {
+  background: #ffffff;
+  padding: 40px 35px;
+  border-radius: 20px;
+  box-shadow: 0 6px 30px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.speaker-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 35px rgba(0,0,0,0.08);
+}
+
+/* IMAGE */
+.speaker-card img {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 25px;
+  border: 6px solid #f39c12;
+}
+
+/* SHORT NAME */
+.short-name {
+  font-size: 14px;
+  color: #f39c12;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+/* FULL NAME */
+.speaker-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0a2d56;
+  margin-bottom: 12px;
+}
+
+/* DESIGNATION */
+.designation {
+  font-size: 13px;
+  font-weight: 600;
+  color: #008484;
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+
+.designation p {
+  margin: 2px 0;
+}
+
+/* DESCRIPTION */
+.speaker-card p {
+  font-size: 14px;
+  color: #000000;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+/* BUTTON */
+.speaker-btn {
+  margin-top: 20px;
+  background-color: #ddeded;
+  color: #ffffff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.speaker-btn:hover {
+  background-color: #aeb8b8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .speakers-grid {
+    grid-template-columns: 1fr;
+  }
+}

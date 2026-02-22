@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+
+.registration-section {
+  background: #f4f7f6;
+  padding: 1px 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-heading {
+  font-size: 30px;
+  font-weight: 800;
+  color: #0a2d56;
+}
+
+.heading-line {
+  height: 4px;
+  background: #f39c12;
+  margin: 12px 0 40px;
+}
+
+.table-wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+
+th {
+  background: #f1f1f1;
+  padding: 12px;
+  font-weight: 700;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.note-text {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* STEP */
+.step-heading {
+  color: #008484;
+  font-size: 20px;
+  margin: 40px 0 20px;
+}
+
+.step-box {
+  background: #eaf4f4;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.step-box h4 {
+  color: #0a2d56;
+  margin-bottom: 15px;
+}
+
+/* GRID */
+.steps-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+/* CARD */
+.card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badge {
+  background: #008484;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.orange-line {
+  height: 3px;
+  background: #f39c12;
+  margin: 15px 0;
+}
+
+.green-text {
+  color: #008484;
+  font-weight: 700;
+}
+
+.payment-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.payment-section img {
+  width: 150px;
+  border-radius: 8px;
+}
+
+.or-text {
+  font-weight: 700;
+  color: #555;
+}
+
+/* BUTTONS */
+button {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-teal {
+  background: #008484;
+  color: white;
+}
+
+.btn-orange {
+  background: #f39c12;
+  color: white;
+}
+
+.btn-blue {
+  background: #0a2d56;
+  color: white;
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px) {
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .payment-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .payment-section img {
+    width: 120px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-heading {
+    font-size: 22px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+    font-size: 13px;
+  }
+}
