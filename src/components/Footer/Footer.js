@@ -47,7 +47,8 @@ function Footer() {
 
         {/* COPYRIGHT */}
         <div className="footer-bottom">
-          © 2026 ICASTII Conference | All Rights Reserved
+          <p>© 2026 ICASTII Conference | All Rights Reserved</p>
+          <p className="footer-credit">Created by Shweta Rathod</p>
         </div>
 
       </div>
